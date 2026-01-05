@@ -451,6 +451,20 @@ body {
   }
 }
 
+/* Mobile scroll only */
+@media (max-width: 600px) {
+  .table-wrapper {
+    overflow-x: auto;
+    /* scrollable */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .job-list table {
+    min-width: 600px;
+    /* table wider than screen to allow scroll */
+  }
+}
+
 * {
   box-sizing: border-box;
 }
