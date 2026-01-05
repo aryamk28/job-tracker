@@ -450,3 +450,7 @@ body {
     flex: 1 1 45%;
   }
 }
+
+* {
+  box-sizing: border-box;
+}
