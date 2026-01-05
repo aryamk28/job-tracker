@@ -415,3 +415,16 @@ body {
     font-size: 14px;
   }
 }
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .filters-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input.search-bar,
+  select.custom-select {
+    width: 100%;
+  }
+}
