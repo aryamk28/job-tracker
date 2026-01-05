@@ -177,12 +177,6 @@ body {
   color: #991b1b;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .job-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 /* Add Job Button */
 .add-job-btn {
@@ -204,33 +198,8 @@ body {
   transform: scale(1.05);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .add-job-btn {
-    width: 100%;
-    /* full width on mobile */
-    font-size: 14px;
-    /* slightly smaller text */
-    padding: 12px 0;
-    /* more tappable area */
-  }
-}
 
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .job-list {
-    grid-template-columns: 1fr;
-  }
-
-  .header h1 {
-    font-size: 1.5rem;
-  }
-}
 
 
 
@@ -404,3 +373,32 @@ body {
 }
 
 /* Rejected */
+
+
+
+
+
+/* ===== Mobile Header ===== */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .header-actions button {
+    flex: 1 1 45%;
+    /* two buttons per row if possible */
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}
